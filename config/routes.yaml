@@ -1,3 +1,26 @@
 #index:
-#    path: /
+#    path: /src/entity/joueur
 #    controller: App\Controller\DefaultController::index
+app_main:
+    path: /Joueur
+    controller: App\Controller\JoueurController::index
+
+app_vote:
+    path: /vote
+    controller: App\Controller\VoteController::index
+
+app_update:
+    path: /joueur/update/{id}
+    controller: App\Controller\JoueurController::update
+
+app_delete:
+    path: /joueur/delete/{id}
+    controller: App\Controller\JoueurController::delete
+
+app_create:
+    path: /joueur/create
+    controller: App\Controller\JoueurController::create
+
+showJoueurs_joueur:
+    path: /joueur/showJoueurs
+    controller: App\Controller\JoueurController::showJoueurs

@@ -1,0 +1,16 @@
+{# templates/joueur/list.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List des joueurs</title>
+</head>
+<body>
+    <h1>List des joueurs</h1>
+    <ul>
+        {% for joueurs in joueurs %}
+            <li>{{ joueurs.nom }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
